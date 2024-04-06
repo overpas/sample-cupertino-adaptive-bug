@@ -1,14 +1,7 @@
-This is a Kotlin Multiplatform project targeting Android, iOS.
-
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
-
-* `/iosApp` contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform, 
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
-
-
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+## [compose-cupertino](https://github.com/alexzhirkevich/compose-cupertino) AdaptiveScaffold background issue
+The background color is set to `Color.Red` in Material scheme and systemBackground to `Color.Green` in Cupertino scheme. 
+### Expected
+background is red on android and green on iOS
+### Actual
+![android](https://github.com/overpas/sample-cupertino-adaptive-bug/assets/31508068/925ec7f8-b21e-4e5d-a224-4708bb75e84f)
+![ios](https://github.com/overpas/sample-cupertino-adaptive-bug/assets/31508068/895cf9f8-1220-4714-b42d-8fef73ab2d45)
